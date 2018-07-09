@@ -1,0 +1,100 @@
+"widgetOnScreen": {
+    "widgets": [
+        {
+            "id": "844bfd87492e493786e682692f476f3f",
+            "uri": "widgets/header/header",
+            "version": null,
+            "position": {
+                "left": 10,
+                "right": null,
+                "bottom": null,
+                "top": 60
+            }
+        }
+    ]
+},
+"widgetPool": {
+    "widgets": [
+        
+    ],
+    "groups": [
+        
+    ]
+},
+"map": {
+    "position": {
+        "left": 0,
+        "right": 0,
+        "bottom": 0,
+        "top": 0
+    },
+    "basemaps": [
+        {
+            "guid": "41863f8fb1a74876ba808428fa310d34",
+            "name": "基础地理",
+            "url": "http://192.168.1.47:6080/arcgis/rest/services/TJJCDL/MapServer",
+            "type": "dynamic",
+            "icon": "baseMap.png",
+            "visible": true,
+            "dynamicToken": false
+        }
+    ],
+    "operationallayers": [
+        {
+            "guid": "64878d77d9b542aabe62096fbefd97a8",
+            "name": "主体功能区",
+            "url": "http://192.168.1.47:6080/arcgis/rest/services/ZTGNQ/MapServer",
+            "type": "dynamic",
+            "icon": null,
+            "visible": true,
+            "dynamicToken": false
+        },
+        {
+            "guid": "3b73495ed86f42508e4ee4e4d5849170",
+            "name": "海域界线",
+            "url": "http://192.168.1.47:6080/arcgis/rest/services/HYJX/MapServer",
+            "type": "dynamic",
+            "icon": null,
+            "visible": true,
+            "dynamicToken": false
+        },
+        {
+            "guid": "360055f14b93433b9f2d5fbd05f2df0e",
+            "name": "海域权属",
+            "url": "http://192.168.1.47:6080/arcgis/rest/services/HYQS/MapServer",
+            "type": "dynamic",
+            "icon": null,
+            "visible": true,
+            "dynamicToken": false
+        },
+        {
+            "guid": "58d327d035a9435d8b3b7913e7dadd98",
+            "name": "功能区划",
+            "url": "http://192.168.1.47:6080/arcgis/rest/services/GNQH/MapServer",
+            "type": "dynamic",
+            "icon": null,
+            "visible": true,
+            "dynamicToken": false
+        }
+    ],
+    "geometryService": {
+        "guid": "e4f04586bb30442eaf78ae77c9b78a4b",
+        "name": "几何服务",
+        "url": "http://192.168.1.47:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+        "type": "geometry",
+        "icon": null,
+        "visible": false,
+        "dynamicToken": false
+    },
+    "mapOptions": {
+        "extent": {
+            "xmin": 1.078139045883812E7,
+            "ymin": 3426190.65785156,
+            "xmax": 1.225465340523813E7,
+            "ymax": 4154381.56208781
+        },
+        "slider": false
+    },
+    "3D": false,
+    "2D": true
+}
