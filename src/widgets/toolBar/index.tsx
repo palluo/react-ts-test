@@ -7,7 +7,7 @@ class ToolBar extends Component {
 
         }
     }
-    public render(){
+    public render() {
         return (
             <div/>
         )

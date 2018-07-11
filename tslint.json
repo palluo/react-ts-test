@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier","./antd-tslint.json"],
   "linterOptions": {
     "exclude": [
       "config/**/*.js",
@@ -9,6 +9,20 @@
   "rules":{
     "object-literal-shorthand":false,
     "object-literal-sort-keys":false,
-    "no-console":false
+    "no-console":false,
+    "ordered-imports":false,
+    "interface-name":false,
+    "member-access":false,
+    "prefer-const":false,
+    "no-empty":false,
+    "semicolon":false,
+    "trailing-comma":false,
+    "jsx-no-multiline-js":false,
+    "jsx-alignment":false,
+    "eofline":false,
+    "ban-types":false,
+    "interface-over-type-literal":false,
+    "array-type":false,
+    "only-arrow-functions":false
   }
 }

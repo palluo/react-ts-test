@@ -6,7 +6,7 @@ const getServiceByMethod = (options) => {
     const cloneData = lodash.cloneDeep(options.data)
     const url = options.url || ''
     if (url.indexOf('//') === -1) {
-         return axios(options);
+        return axios(options);
     }
     switch (method) {
         case 'get':
@@ -19,7 +19,7 @@ const getServiceByMethod = (options) => {
             return axios.delete(url)
         case 'put':
             return axios.put(url, cloneData)
-        default: 
+        default:
             return axios(options)
     }
 }
@@ -38,7 +38,7 @@ export const getService = (options) => {
         }, (err) => {
             const service = '调用:(' + serviceName + ')服务失败' + url
             const obj = {
-                service: {service},
+                service: { service },
                 message: err.message
             }
             console.log(obj);
@@ -47,13 +47,13 @@ export const getService = (options) => {
         }).catch((err) => {
             const service = '调用:(' + serviceName + ')服务异常' + url
             const obj = {
-                service: {service},
+                service: { service },
                 message: err.message
             }
             console.log(obj)
             return Promise.reject(obj)
         })
-    }else{
+    } else {
         const message = '参数为null'
         console.log(message)
         return Promise.reject(message)

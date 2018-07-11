@@ -1,23 +1,23 @@
 import { login } from 'actions/login'
-import {  Button, Form, Icon, Input } from 'antd'
+import { Button, Form, Icon, Input } from 'antd'
 import { History } from 'history'
 import React from 'react'
 // import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import  './style/index.less'
+import './style/index.less'
 
 interface IProps {
-    form:any,
-    login: (userName:string, password:string, callBack:()=>void)=> void,
-    history:History
-  }
+    form: any,
+    login: (userName: string, password: string, callBack: () => void) => void,
+    history: History
+}
 const FormItem = Form.Item
 function hasErrors(fieldsError) {
     return Object.keys(fieldsError).some(field => fieldsError[field]);
 }
 
-const mapStateToProps =(state) => {
-    return {...state.login}
+const mapStateToProps = (state) => {
+    return { ...state.login }
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -32,14 +32,14 @@ const mapDispatchToProps = (dispatch) => {
 //     dispatch => bindActionCreators({ login }, dispatch)
 // )
 
-class Login extends React.Component <IProps>{
+class Login extends React.Component<IProps> {
     public static defaultProps = {
-        isShow : true,
+        isShow: true,
     }
 
-    constructor( props ){
+    constructor(props) {
         super(props)
-        this.state ={
+        this.state = {
         }
     }
     public componentDidMount() {
@@ -50,7 +50,7 @@ class Login extends React.Component <IProps>{
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 // this.props.history.push('/main')
-                this.props.login(values.userName, values.password, () =>  this.props.history.replace('/main'))
+                this.props.login(values.userName, values.password, () => this.props.history.replace('/main'))
             }
         });
     }
@@ -58,11 +58,11 @@ class Login extends React.Component <IProps>{
         const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form;
         let userNameError = isFieldTouched('userName') && getFieldError('userName')
         let passwordError = isFieldTouched('password') && getFieldError('password')
-        userNameError = userNameError?'error':''
-        passwordError = passwordError?'error':''
+        userNameError = userNameError ? 'error' : ''
+        passwordError = passwordError ? 'error' : ''
         return (
-            <div className='dgp-login-container'>
-                <Form layout="inline" onSubmit={this.handleSubmit} className='loginForm'>
+            <div className="dgp-login-container">
+                <Form layout="inline" onSubmit={this.handleSubmit} className="loginForm">
                     <FormItem
                         validateStatus={userNameError}
                         help={userNameError || ''}
@@ -80,7 +80,8 @@ class Login extends React.Component <IProps>{
                         {getFieldDecorator('password', {
                             rules: [{ required: true, message: '请输入密码!' }],
                         })(
-                            <Input prefix={<Icon type="lock" style={{ fontSize: 13 }} />} type="password" placeholder="密码：" />
+                            <Input prefix={<Icon type="lock" style={{ fontSize: 13 }} />}
+                            type="password" placeholder="密码：" />
                         )}
                     </FormItem>
                     <FormItem>
@@ -95,8 +96,8 @@ class Login extends React.Component <IProps>{
                 </Form>
             </div >
         )
-        
+
     }
 }
 const wrappedLogin = Form.create()(Login)
-export default connect(mapStateToProps, mapDispatchToProps)(wrappedLogin) 
+export default connect(mapStateToProps, mapDispatchToProps)(wrappedLogin)

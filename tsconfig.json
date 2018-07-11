@@ -5,7 +5,7 @@
     "module": "esnext",
     "target": "es5",
     "allowSyntheticDefaultImports":true,
-    "lib": ["es6", "dom"],
+    "lib": ["es7", "dom"],
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react",
@@ -14,8 +14,8 @@
     "moduleResolution": "node",
     "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
     "noImplicitAny": false,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -28,6 +28,7 @@
     "acceptance-tests",
     "webpack",
     "jest",
-    "src/setupTests.ts"
+    "src/setupTests.ts",
+    "src/libs/component"
   ]
 }

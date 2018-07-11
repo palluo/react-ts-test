@@ -1,46 +1,44 @@
 import { API } from 'common/config'
 import { getService } from 'common/utils/serviceUtil'
-import { call, fork, take} from 'redux-saga/effects'
-
+import { call, fork, take } from 'redux-saga/effects'
 
 function* login(userName, password, onSuccess) {
     const encryptionPassword = yield call(getLoginEncryption, password)
     const obj = {
-        loginName:userName,
-        password:encryptionPassword,
+        loginName: userName,
+        password: encryptionPassword,
     }
-    const userInfo = yield call (logincheck, obj)
+    const userInfo = yield call(logincheck, obj)
     if (userInfo) {
-        yield call (onSuccess)
+        yield call(onSuccess)
         // yield put(loginSuccee(userInfo))
-    } 
+    }
 }
 
-function* getLoginEncryption  (password)  {
+function* getLoginEncryption(password) {
     const obj = {
-        url: API.loginEncryption+password,
+        url: API.loginEncryption + password,
         serviceName: '获取加密密码',
         method: 'get'
     }
-    const response = yield call (getService, obj)
+    const response = yield call(getService, obj)
     if (response.code === 200) {
         const encryptionPassword = response.data
         return encryptionPassword
     }
 }
 
-
-function* logincheck (data)  {
+function* logincheck(data) {
     const obj = {
         url: API.loginControllerLogin,
         serviceName: '获取加密密码',
         method: 'post',
-        data:data
+        data: data
     }
-    const response =  yield call (getService, obj)
+    const response = yield call(getService, obj)
     if (response.code === 200) {
         return response.data
-    }else{
+    } else {
         return null
     }
 }

@@ -9,7 +9,7 @@ class Header extends Component {
     }
     public render() {
         return (
-            <div className='container'>
+            <div className="container">
                 <div> ReactGIS </div>
             </div>
         )

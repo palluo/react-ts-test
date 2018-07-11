@@ -3,10 +3,10 @@ import Loading from 'widgets/loading'
 export default function (loadable) {
     return [{
         name: 'login',
-        path:'/',
+        path: '/',
         exact: true,
         component: loadable({
-            loader:() => import('widgets/login'),
+            loader: () => import('widgets/login'),
             loading: Loading
         })
     }]

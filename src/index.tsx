@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom'
 import rootReducer from 'reducers'
-import { applyMiddleware, createStore} from 'redux'
+import { applyMiddleware, createStore } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from 'saga'
@@ -30,6 +30,5 @@ const render = Component =>
     document.getElementById('root')
   );
 
-  render(App)
+render(App)
 registerServiceWorker();
-

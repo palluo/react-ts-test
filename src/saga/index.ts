@@ -1,6 +1,6 @@
-import {all, fork} from 'redux-saga/effects'
-import  {watchLogin } from './login'
+import { all, fork } from 'redux-saga/effects'
+import { watchLogin } from './login'
 
 export default function* rootSaga() {
-    yield all([fork( watchLogin )])
+    yield all([fork(watchLogin)])
 }
