@@ -13,9 +13,9 @@ type FormCreateOptionMessagesCallback = (...args: any[]) => string;
 
 interface FormCreateOptionMessages {
   [messageId: string]:
-    | string
-    | FormCreateOptionMessagesCallback
-    | FormCreateOptionMessages;
+  | string
+  | FormCreateOptionMessagesCallback
+  | FormCreateOptionMessages;
 }
 
 export interface FormCreateOption<T> {
@@ -126,7 +126,7 @@ export interface FormComponentProps {
 }
 
 export interface RcBaseFormProps {
-   wrappedComponentRef?: any;
+  wrappedComponentRef?: any;
 }
 
 export interface ComponentDecorator {
@@ -161,7 +161,7 @@ export default class Form extends React.Component<FormProps, any> {
 
   static createFormField = createFormField;
 
-  static create = function<TOwnProps>(options: FormCreateOption<TOwnProps> = {}): ComponentDecorator {
+  static create = function <TOwnProps>(options: FormCreateOption<TOwnProps> = {}): ComponentDecorator {
     return createDOMForm({
       fieldNameProp: 'id',
       ...options,

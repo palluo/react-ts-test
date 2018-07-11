@@ -38,7 +38,7 @@ class Main extends React.Component<IProps> {
   public componentDidMount() {
     if (!this.props.mapCtrl) {
       initApp()
-      // this.props.createMap(this.refs.mapView)
+      this.props.createMap(this.refs.mapView)
     }
   }
 
@@ -49,8 +49,7 @@ class Main extends React.Component<IProps> {
         <div id="container" className="container">
           {/* {(!this.props.component)?'':<this.props.component/>} */}
         </div>
-        {/* <div ref={this.mapView} className='mapView'/> */}
-        <div className="mapView" />
+        <div ref="mapView" className="mapView" />
       </div>
     )
 

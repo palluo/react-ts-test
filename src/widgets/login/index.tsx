@@ -1,5 +1,5 @@
 import { login } from 'actions/login'
-import { Button, Form, Icon, Input } from 'antd'
+import { Button, Form, Icon, Input } from 'libs/component'
 import { History } from 'history'
 import React from 'react'
 // import { bindActionCreators } from 'redux'

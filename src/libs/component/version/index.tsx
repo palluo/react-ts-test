@@ -1,3 +1,3 @@
-import { version } from '../../package.json';
 
+const version = '3.6.5'
 export default version;

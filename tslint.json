@@ -23,6 +23,11 @@
     "ban-types":false,
     "interface-over-type-literal":false,
     "array-type":false,
-    "only-arrow-functions":false
+    "only-arrow-functions":false,
+    "unified-signatures":false,
+    "callable-types":false,
+    "prefer-for-of":false,
+    "max-classes-per-file":false,
+    "no-empty-interface":false
   }
 }
