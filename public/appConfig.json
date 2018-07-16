@@ -1,0 +1,8 @@
+{
+    "serverUrl":"http://192.168.1.30:8086/dgp-server-web/rest/",
+    "spitialServerUrl":"http://192.168.200.82:8887/api/",
+    "proxyUrl":"http://192.168.1.30:8086/proxy/proxy.jsp",
+    "exportDataUrl": "http://192.168.200.82:8887/api/exportData",
+    "systemName": "React+TypeScript+ArcGIS演示系统",
+    "mapWkid": "4549"
+  }

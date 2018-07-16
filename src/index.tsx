@@ -10,6 +10,7 @@ import rootSaga from 'saga'
 import App from './App';
 import './index.less';
 import registerServiceWorker from './registerServiceWorker'
+import { getAppConfig } from 'common/init'
 
 // 创建saga middleware
 const sagaMiddleware = createSagaMiddleware()
@@ -29,6 +30,6 @@ const render = Component =>
     </Provider>,
     document.getElementById('root')
   );
-
+getAppConfig()
 render(App)
 registerServiceWorker();

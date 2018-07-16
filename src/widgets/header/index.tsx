@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
+import { AppGlobals } from 'common/module/appGlobals'
 import './style/index.less'
 
-class Header extends Component {
+class IProps {
+     sysName: string = ''
+}
+class Header extends Component<IProps> {
+    public static defaultProps = {
+        sysName: AppGlobals.appInfo.systemName
+    }
     constructor(props) {
         super(props)
         this.state = {
@@ -10,7 +17,7 @@ class Header extends Component {
     public render() {
         return (
             <div className="container">
-                <div> ReactGIS </div>
+                <div className="sysName" >{this.props.sysName}</div>
             </div>
         )
     }

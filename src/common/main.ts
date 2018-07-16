@@ -1,10 +1,11 @@
 import { getService } from 'common/utils/serviceUtil'
+import { RequestParam } from 'common/module/requestParam'
 const initApp = () => {
-    const option = {
-        url: './privilege.json'
-    }
+    let option: RequestParam = new RequestParam()
+    option.url = './privilege.json'
+    option.isHttp = false
     getService(option).then((respone) => {
-        // console.log(respone)
+        return respone
     })
 }
 

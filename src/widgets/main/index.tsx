@@ -1,24 +1,23 @@
-import { createMap } from 'actions/main'
+import { createMap, initApp } from 'actions/main'
 // import { bindActionCreators } from 'redux'
-import { initApp } from 'common/main'
 import React from 'react'
 import { connect } from 'react-redux'
+import { IProps } from 'reducers/main'
 import './style/index.less'
 
-interface IProps {
-  mapCtrl: object,
-  createMap: (domNode: object) => void,
-}
-
 const mapStateToProps = (state) => {
-  return { ...state.mian }
+  return { ...state.main }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
     createMap: (domNode) => {
       dispatch(createMap(domNode))
-    }
+    },
+    initApp: () => {
+      dispatch(initApp())
+    },
+    mapCtrl: null
   }
 }
 // @connect(
@@ -26,8 +25,8 @@ const mapDispatchToProps = (dispatch) => {
 //     dispatch => bindActionCreators({ createMap }, dispatch)
 // )
 
-class Main extends React.Component<IProps> {
-  public static defaultProps = {
+class Main extends React.Component<IProps, any> {
+  static defaultProps = {
     isShow: true,
   }
   constructor(props) {
@@ -35,19 +34,19 @@ class Main extends React.Component<IProps> {
     this.state = {
     }
   }
-  public componentDidMount() {
+   componentDidMount() {
     if (!this.props.mapCtrl) {
-      initApp()
+      this.props.initApp()
       this.props.createMap(this.refs.mapView)
     }
   }
 
-  public render() {
+   public render() {
     return (
       <div className="app">
         <div className="popup" />
         <div id="container" className="container">
-          {/* {(!this.props.component)?'':<this.props.component/>} */}
+          {(!this.props.widget) ? '' : <this.props.widget />}
         </div>
         <div ref="mapView" className="mapView" />
       </div>

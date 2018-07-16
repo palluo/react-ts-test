@@ -10,8 +10,8 @@ import 'libs/component/form/style/index.less'
 import 'libs/component/input/style/index.less'
 
 interface IProps {
-    form: any,
-    login: (userName: string, password: string, callBack: () => void) => void,
+    form: any
+    login: (userName: string, password: string, callBack: () => void) => void
     history: History
 }
 const FormItem = Form.Item

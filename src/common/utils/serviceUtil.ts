@@ -1,13 +1,12 @@
 import axios from 'axios'
 import lodash from 'lodash'
+import { AppGlobals } from 'common/module/appGlobals'
+import { RequestParam } from 'common/module/requestParam'
 
-const getServiceByMethod = (options) => {
+const getServiceByMethod = (options: RequestParam) => {
     const method = options.method || 'get'
     const cloneData = lodash.cloneDeep(options.data)
     const url = options.url || ''
-    if (url.indexOf('//') === -1) {
-        return axios(options);
-    }
     switch (method) {
         case 'get':
             return axios.get(url, {
@@ -23,10 +22,13 @@ const getServiceByMethod = (options) => {
             return axios(options)
     }
 }
-export const getService = (options) => {
+export const getService = (options: RequestParam) => {
     if (options) {
         const serviceName = options.serviceName || '未知服务'
-        const url = options.url || ''
+        let url = options.url || ''
+        if (options.isHttp && url.indexOf('//') === -1) {
+            options.url = AppGlobals.appInfo.serverUrl + url
+        }
         return getServiceByMethod(options).then((response) => {
             if (response.status === 200) {
                 return Promise.resolve(response.data)
