@@ -1,448 +1,771 @@
 {
-    "widgetOnScreen": {
-        "widgets": [
-            {
-                "id": "844bfd87492e493786e682692f476f3f",
-                "uri": "widgets/DockableController/Widget",
-                "version": null,
-                "position": {
-                    "left": 10,
-                    "right": null,
-                    "bottom": null,
-                    "top": 60
-                }
-            },
-            {
-                "id": "8c95c87593c846a998410d7f3c195a02",
-                "uri": "widgets/ToolBar/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": 0,
-                    "bottom": null,
-                    "top": 50
-                }
-            },
-            {
-                "id": "ef6c1ae377c74b3284d4bd68b5940e62",
-                "uri": "widgets/Header/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": null,
-                    "bottom": null,
-                    "top": null
-                }
-            },
-            {
-                "id": "428cac11b27a43709fb8622d503bb055",
-                "uri": "widgets/LevitationBarController/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": 100,
-                    "bottom": null,
-                    "top": null
-                }
-            },
-            {
-                "id": "60858292a351482483167aa59c257ef6",
-                "uri": "widgets/RangingToolbarController/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": 15,
-                    "bottom": null,
-                    "top": 100
-                }
-            },
-            {
-                "id": "e3d813dd86924561bb204c96bb7902e3",
-                "uri": "widgets/CommonToolBarController/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": 100,
-                    "bottom": null,
-                    "top": 100
-                }
-            },
-            {
-                "id": "b1811bc00254485f9556eed91f926001",
-                "uri": "widgets/DocumentViewerWidget/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": null,
-                    "bottom": null,
-                    "top": null
-                }
-            },
-            {
-                "id": "66653db6b3cb4d84a902301df74e1d26",
-                "uri": "widgets/Alert/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": -250,
-                    "bottom": 110,
-                    "top": null
-                }
-            },
-            {
-                "id": "2bccf60289cf41aa82bcebd91da4a7f2",
-                "uri": "widgets/Coordinate/Widget",
-                "version": null,
-                "position": {
-                    "left": 20,
-                    "right": null,
-                    "bottom": 20,
-                    "top": null
-                }
-            },
-            {
-                "id": "0dd5d4eda7d44e71a2d86cfc5ff4f8b1",
-                "uri": "themes/OneMapTheme/widgets/RightSidebar/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": null,
-                    "bottom": null,
-                    "top": 88
-                }
-            },
-            {
-                "id": "303c52e1407b417899506ca6bf494678",
-                "uri": "widgets/MenuBar/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": null,
-                    "bottom": null,
-                    "top": 6
-                }
-            },
-            {
-                "id": "208d7cde5a044963b1d2ea497c92bee1",
-                "uri": "widgets/SplitScreenToolBarController/Widget",
-                "version": null,
-                "position": {
-                    "left": 50,
-                    "right": null,
-                    "bottom": null,
-                    "top": 80
-                }
-            },
-            {
-                "id": "18cf475e0a2548bb8659f90ecd031388",
-                "uri": "themes/OneMapTheme/widgets/LeftSidebar/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": null,
-                    "bottom": null,
-                    "top": 88
-                }
-            },
-            {
-                "id": "73160930d6c141148dbbf5b86a40fc18",
-                "uri": "widgets/OverviewMap/Widget",
-                "version": null,
-                "position": {
-                    "left": null,
-                    "right": 0,
-                    "bottom": 0,
-                    "top": null
-                }
-            }
-        ]
-    },
-    "widgetPool": {
-        "widgets": [
-            {
-                "id": "ca7c46b9f5464558ad30097d30f1be38",
-                "name": "专题管理",
-                "icon": "hb-icon-topic",
-                "uri": "widgets/TopicManager/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "5d6b99203e7e4a859e1f22298a573ece",
-                "name": "分屏I查询",
-                "icon": "hb-icon-i-search",
-                "uri": "widgets/SplitScreenTools/SplitIdentifyWidget/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "208d7cde5a044963b1d2ea497c92bee1"
-            },
-            {
-                "id": "29028cfa9d114c60b1903496af9d592b",
-                "name": "分屏对比",
-                "icon": "hb-icon-screens-contrast",
-                "uri": "widgets/SplitScreen/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "ef965ce4576f4e45a4820f49c387d2c5",
-                "name": "专题关闭",
-                "icon": "icon iconfont icon-qingchu2",
-                "uri": "widgets/ProjectClose/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "1a3f581aaaea419d9d06dc143f5b65a7",
-                "name": "卷帘",
-                "icon": "hb-icon-roller-blinds",
-                "uri": "widgets/MySwipe/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "e3b4ab684e8040e3bd1a32015e7bda42",
-                "name": "全图",
-                "icon": "hb-icon-map-home",
-                "uri": "widgets/MapHome/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "f7f43e8b16d34d33b29d876ce5ce32d6",
-                "name": "长度量测",
-                "icon": null,
-                "uri": "widgets/LengthMeasure/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "60858292a351482483167aa59c257ef6"
-            },
-            {
-                "id": "a81ad0f12eb54fa8a49c3e69d1f135bc",
-                "name": "图例",
-                "icon": "hb-icon-legend",
-                "uri": "widgets/Legend/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "f894fe74da3049b5a063d130c37866df",
-                "name": "I查询",
-                "icon": "hb-icon-i-search",
-                "uri": "widgets/IdentifyWidget/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "ada41bf5f8114708af74220516bc228f",
-                "name": "图片导出",
-                "icon": null,
-                "uri": "widgets/ExportMap/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": null
-            },
-            {
-                "id": "a0c843b9ca994038b00fcfbc23b6b1ef",
-                "name": "标注",
-                "icon": "icon iconfont icon-gpsbiaozhudianguanli",
-                "uri": "widgets/Draw/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "60858292a351482483167aa59c257ef6"
-            },
-            {
-                "id": "70ea187f945649d9a7b396ce2671ac66",
-                "name": "数据清除",
-                "icon": "hb-icon-clear",
-                "uri": "widgets/DataClear/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "e3d813dd86924561bb204c96bb7902e3"
-            },
-            {
-                "id": "ff12a679c1aa4529bc8d011221dcdcbc",
-                "name": "面积量测",
-                "icon": null,
-                "uri": "widgets/AreaMeasure/Widget",
-                "config": null,
-                "configContent": null,
-                "containerId": "60858292a351482483167aa59c257ef6"
-            }
-        ],
-        "groups": [
-            {
-                "id": "1f08bdc39a9945a1813e769e5b4353e2",
-                "label": " 一张图",
-                "icon": "icon iconfont icon-guihualogo",
-            "containerI
-    1453
-    d" : "303c52e1407b417899506ca6bf494678",
-            "widgets": [
-                    {
-                        "id": "9377f6bcc9524f78a3c9cd812edf6b09",
-                        "name": "专题统计",
-                        "icon": "hb-icon-topic",
-                        "uri": "widgets/TopicStatisticWidget/Widget",
-                        "config": null,
-                        "configContent": null,
-                        "containerId": "303c52e1407b417899506ca6bf494678"
-                    }
-                ]
-            },
-            {
-                "id": "3878bbad9c1c4bc78992f4f3b3c3bc49",
-                "label": "业务热点",
-                "icon": "icon iconfont icon-tubiao-",
-                "containerId": "303c52e1407b417899506ca6bf494678",
-                "widgets": [
-                    {
-                        "id": "9fc9eb8b1f6347ac91d0b50c6224ef5e",
-                        "name": "热点",
-                        "icon": "icon iconfont icon-tubiao-",
-                        "uri": "widgets/BusinessHot/Widget",
-                        "config": null,
-                        "configContent": null,
-                        "containerId": "303c52e1407b417899506ca6bf494678"
-                    }
-                ]
-            },
-            {
-                "id": "1724796855f4444eb80acd178fe3c2f9",
-                "label": "指标监测",
-                "icon": "icon iconfont icon-guihuashishipinggu",
-                "containerId": "303c52e1407b417899506ca6bf494678",
-                "widgets": [
-                    {
-                        "id": "5403ea7096aa4ab5bea7f2d8e3ca9a14",
-                        "name": "指标体系",
-                        "icon": "hb-icon-topic",
-                        "uri": "widgets/IndexStatisticWidget/Widget",
-                        "config": null,
-                        "configContent": null,
-                        "containerId": "303c52e1407b417899506ca6bf494678"
-                    }
-                ]
-            },
-            {
-                "id": "6b3628af45c349169bcfe11a4099f08b",
-                "label": "决策评估",
-                "icon": "icon iconfont icon-guihuashishipinggu",
-                "containerId": "303c52e1407b417899506ca6bf494678",
-                "widgets": [
-                    {
-                        "id": "84dc4fc928424ff89ae831fb39e4be8b",
-                        "name": "规划分区评估",
-                        "icon": "icon iconfont icon-guihuachengguoshenchayubeian",
-                        "uri": "widgets/PlanZoneWidget/Widget",
-                        "config": null,
-                        "configContent": null,
-                        "containerId": "303c52e1407b417899506ca6bf494678"
-                    },
-                    {
-                        "id": "c60153851534436a8090e36c9c18fc2a",
-                        "name": "规划指标评估",
-                        "icon": "icon iconfont icon-guihuashishipinggu",
-                        "uri": "widgets/PlanIndexWidget/Widget",
-                        "config": null,
-                        "configContent": null,
-                        "containerId": "303c52e1407b417899506ca6bf494678"
-                    },
-                    {
-                        "id": "aef8c27604c14c7fabba6450d3aea835",
-                        "name": "功能区评估",
-                        "icon": "icon iconfont icon-guihuachengguoshenchayubeian",
-                        "uri": "widgets/FunctionalAssessment/Widget",
-                        "config": null,
-                        "configContent": null,
-                        "containerId": "303c52e1407b417899506ca6bf494678"
-                    }
-                ]
-            }
-        ]
-    },
-    "map": {
-        "position": {
-            "left": 0,
-            "right": 0,
-            "bottom": 0,
-            "top": 0
-        },
-        "basemaps": [
-            {
-                "guid": "41863f8fb1a74876ba808428fa310d34",
-                "name": "基础地理",
-                "url": "http://192.168.1.47:6080/arcgis/rest/services/TJJCDL/MapServer",
-                "type": "dynamic",
-                "icon": "baseMap.png",
-                "visible": true,
-                "dynamicToken": false
-            }
-        ],
-        "operationallayers": [
-            {
-                "guid": "64878d77d9b542aabe62096fbefd97a8",
-                "name": "主体功能区",
-                "url": "http://192.168.1.47:6080/arcgis/rest/services/ZTGNQ/MapServer",
-                "type": "dynamic",
-                "icon": null,
-                "visible": true,
-                "dynamicToken": false
-            },
-            {
-                "guid": "3b73495ed86f42508e4ee4e4d5849170",
-                "name": "海域界线",
-                "url": "http://192.168.1.47:6080/arcgis/rest/services/HYJX/MapServer",
-                "type": "dynamic",
-                "icon": null,
-                "visible": true,
-                "dynamicToken": false
-            },
-            {
-                "guid": "360055f14b93433b9f2d5fbd05f2df0e",
-                "name": "海域权属",
-                "url": "http://192.168.1.47:6080/arcgis/rest/services/HYQS/MapServer",
-                "type": "dynamic",
-                "icon": null,
-                "visible": true,
-                "dynamicToken": false
-            },
-            {
-                "guid": "58d327d035a9435d8b3b7913e7dadd98",
-                "name": "功能区划",
-                "url": "http://192.168.1.47:6080/arcgis/rest/services/GNQH/MapServer",
-                "type": "dynamic",
-                "icon": null,
-                "visible": true,
-                "dynamicToken": false
-            }
-        ],
-        "geometryService": {
-            "guid": "e4f04586bb30442eaf78ae77c9b78a4b",
-            "name": "几何服务",
-            "url": "http://192.168.1.47:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
-            "type": "geometry",
-            "icon": null,
-            "visible": false,
-            "dynamicToken": false
-        },
-        "mapOptions": {
-            "extent": {
-                "xmin": 1.078139045883812E7,
-                "ymin": 3426190.65785156,
-                "xmax": 1.225465340523813E7,
-                "ymax": 4154381.56208781
-            },
-            "slider": false
-        },
-        "3D": false,
-        "2D": true
-    }
+	"widgetOnScreen": {
+		"widgets": [{
+			"id": "ce50c6c142ca4d66b74e731236724c39",
+			"name": "右侧边栏",
+			"uri": "themes/OneMapTheme/widgets/RightSidebar/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": 0,
+				"bottom": null,
+				"top": 95,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "dbe718835536441d8a03c2aea1660aab",
+			"name": "专业工具栏",
+			"uri": "themes/OneMapTheme/widgets/ProfessionalToolBar/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": 300,
+				"bottom": null,
+				"top": 60,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "07e484e2a4854247ae4150e7f4db134e",
+			"name": "通用工具栏",
+			"uri": "themes/OneMapTheme/widgets/CommonToolBar/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": 10,
+				"bottom": null,
+				"top": 55,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "8bb61b06e81d4bad9eeb53868ea5e680",
+			"name": "图例",
+			"uri": "widgets/ScreenLegend/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": 100,
+				"bottom": 0,
+				"top": null,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "59f7159ed24240a4bf1633aa2473f7d0",
+			"name": "搜索查询",
+			"uri": "widgets/Search/Widget",
+			"version": null,
+			"position": {
+				"left": 500,
+				"right": null,
+				"bottom": null,
+				"top": 65,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "d6b090be6c314f2082c9c2a97e522aaf",
+			"name": "底图切换",
+			"uri": "widgets/MapSwitch/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": 10,
+				"bottom": null,
+				"top": 65,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "69f37fdbccdc4c729a4d4fa6e74ce911",
+			"name": "专题目录",
+			"uri": "widgets/TopicMenu/Widget",
+			"version": null,
+			"position": {
+				"left": 0,
+				"right": null,
+				"bottom": null,
+				"top": 96,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "142ba6c5f2434cb9b7642a0ccde28ab3",
+			"name": "坐标及比例尺",
+			"uri": "widgets/Coordinate/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": 85,
+				"bottom": 0,
+				"top": null,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "1b04d0776f66460babbb15bfd10ee2f2",
+			"name": "地图基本工具",
+			"uri": "widgets/MapNavigator/Widget",
+			"version": null,
+			"position": {
+				"left": 10,
+				"right": null,
+				"bottom": null,
+				"top": 65,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "2b3ba41e35854b99b1ab9bee0ffa7409",
+			"name": "Head",
+			"uri": "themes/OneMapTheme/widgets/Header/Widget",
+			"version": null,
+			"position": {
+				"left": 0,
+				"right": 0,
+				"bottom": null,
+				"top": 0,
+				"width": null,
+				"height": 95
+			}
+		}, {
+			"id": "5e3956ee5fa14c3b9f79d1cac2cd2971",
+			"name": "项目状态",
+			"uri": "widgets/ProjectStatus/Widget",
+			"version": null,
+			"position": {
+				"left": null,
+				"right": null,
+				"bottom": null,
+				"top": null,
+				"width": null,
+				"height": null
+			}
+		}]
+	},
+	"widgetPool": {
+		"widgets": [{
+			"id": "7756778c8d7c4ec2849b8a9d8d3b3c9b",
+			"name": "分屏属性查询",
+			"icon": null,
+			"uri": "widgets/SplitScreenIdentifyWidget/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": null,
+			"position": {
+				"left": null,
+				"right": 30,
+				"bottom": null,
+				"top": 100,
+				"width": 400,
+				"height": 500
+			}
+		}, {
+			"id": "5c787a0fc71f49a9877ea6b0d37e4af9",
+			"name": "属性查询",
+			"icon": "dgp-icon-indentify1",
+			"uri": "widgets/IdentifyWidget/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": 30,
+				"bottom": null,
+				"top": 100,
+				"width": null,
+				"height": 400
+			}
+		}, {
+			"id": "df97d62d80b04caabfca6838b7a58ccf",
+			"name": "专题管理",
+			"icon": "dgp-icon-topic-manager",
+			"uri": "widgets/TopicManager/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": 0,
+				"right": 120,
+				"bottom": null,
+				"top": 96,
+				"width": null,
+				"height": 400
+			}
+		}, {
+			"id": "56d5d798d0824a3cbb4dcaebeddfd021",
+			"name": "分屏对比",
+			"icon": "dgp-icon-split-screen1",
+			"uri": "widgets/SplitScreen/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": 30,
+				"bottom": null,
+				"top": 100,
+				"width": null,
+				"height": 400
+			}
+		}, {
+			"id": "9129d82fab4b4fb2a9921e346ac57fa6",
+			"name": "标注",
+			"icon": "dgp-icon-flag1",
+			"uri": "widgets/Draw/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": 120,
+				"bottom": null,
+				"top": 60,
+				"width": null,
+				"height": 95
+			}
+		}, {
+			"id": "5c86ff9c38e54d9ebe788f195c710cd4",
+			"name": "面积测量",
+			"icon": "dgp-icon-measure-area1",
+			"uri": "widgets/MeasureArea/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": null,
+				"bottom": null,
+				"top": null,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "6c598d1f109d4a13a738b0c668dcae74",
+			"name": "距离量测",
+			"icon": "dgp-icon-measure-line1",
+			"uri": "widgets/MeasureLength/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": null,
+				"bottom": null,
+				"top": null,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "3d1c313511f74c63bf9e7f0cb0b5780b",
+			"name": "图片导出",
+			"icon": "dgp-icon-img-export",
+			"uri": "widgets/MapExport/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": 30,
+				"bottom": null,
+				"top": 100,
+				"width": 400,
+				"height": 3002000
+
+			}
+		}, {
+			"id": "c13c606d36f5484dbf11d2b2af1feff6",
+			"name": "地图清理",
+			"icon": "dgp-icon-clear1",
+			"uri": "widgets/MapClear/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": null,
+				"bottom": null,
+				"top": null,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "276a0f9feec845a2ab7381709081094c",
+			"name": "专题目录",
+			"icon": null,
+			"uri": "widgets/TopicMenu/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": null,
+			"position": {
+				"left": 0,
+				"right": null,
+				"bottom": null,
+				"top": 96,
+				"width": null,
+				"height": null
+			}
+		}, {
+			"id": "6a50f9c3804d49bca8cd50044749245f",
+			"name": "书签分享",
+			"icon": null,
+			"uri": "widgets/BookMarksShareList/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": "07e484e2a4854247ae4150e7f4db134e",
+			"position": {
+				"left": null,
+				"right": null,
+				"bottom": null,
+				"top": 100,
+				"width": 250,
+				"height": null
+			}
+		}, {
+			"id": "d0729b5bd5a84208a6fe6b3dab2b6850",
+			"name": "控规历史回溯",
+			"icon": "dgp-icon-datatrace",
+			"uri": "widgets/HistoricalDataTrace/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": null,
+			"position": {
+				"left": null,
+				"right": 30,
+				"bottom": null,
+				"top": 100,
+				"width": 400,
+				"height": 500
+			}
+		}, {
+			"id": "de99a15c180148458d4b78605c6bda86",
+			"name": "控规历史回溯分屏",
+			"icon": null,
+			"uri": "widgets/HistorySplitScreen/Widget",
+			"config": null,
+			"configContent": null,
+			"containerId": null,
+			"position": {
+				"left": null,
+				"right": 30,
+				"bottom": null,
+				"top": 100,
+				"width": null,
+				"height": 400
+			}
+		}],
+		"groups": [{
+			"id": "4125342fb3794bf1af299f54d3e7ef68",
+			"label": "空间统计",
+			"icon": "dgp-icon-search",
+			"containerId": "dbe718835536441d8a03c2aea1660aab",
+			"widgets": [{
+				"id": "9d4660c9fe6143a4ae52ca746ce42c93",
+				"name": "发证项目统计",
+				"icon": "dgp-icon-bar",
+				"uri": "widgets/CertificateStatistic/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "6e83f481c43f4e778eca04420172d490",
+				"name": "设施覆盖统计",
+				"icon": "dgp-icon-log",
+				"uri": "widgets/FacilityCover/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "624bbf8ba8694cd8903a853fbd1cde41",
+				"name": "通用查询统计",
+				"icon": "dgp-icon-map",
+				"uri": "widgets/UniversalQuery/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "1af23d769dcd4dc5b8628cfe88e3db5c",
+				"name": "项目周边统计",
+				"icon": "dgp-icon-map",
+				"uri": "widgets/SpaceStatistics/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "e97363a7c8d84538b5ad7e8372663324",
+				"name": "用地布局统计",
+				"icon": "dgp-icon-statistic",
+				"uri": "widgets/LandLayout/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}]
+		}, {
+			"id": "60240b94237d401893dc9058ce93faac",
+			"label": "基础分析",
+			"icon": "dgp-icon-search",
+			"containerId": "dbe718835536441d8a03c2aea1660aab",
+			"widgets": [{
+				"id": "a2c4872f6f204e3690e60834568c3411",
+				"name": "用地冲突分析",
+				"icon": "dgp-icon-cube",
+				"uri": "widgets/LandConflict/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "88d622663792411fa734d2f8ff4c1506",
+				"name": "时限一张图",
+				"icon": "dgp-icon-history",
+				"uri": "widgets/TimeMap/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "ded34960223a4afc9ff32cf04f72490f",
+				"name": "地块全生命周期",
+				"icon": "dgp-icon-land-bal",
+				"uri": "widgets/LandLifeCircle/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "6a3acad091ab442694ee36102703f9ec",
+				"name": "地图可视化表达",
+				"icon": "dgp-icon-map",
+				"uri": "widgets/MapVisualization/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "de7b0434584f438c963f7c8e866f9ec5",
+				"name": "自定义缓冲区分析",
+				"icon": "dgp-icon-Relief-map",
+				"uri": "widgets/CustomizeBufferAnalysis/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "175fb70468fb477e807f09f9e93604ab",
+				"name": "用地指标分析",
+				"icon": "dgp-icon-statistic",
+				"uri": "widgets/LandIndex/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "4768eb68d3dc432abb40cac2d98e6ecc",
+				"name": "图片幻灯片展示",
+				"icon": "dgp-icon-statistic",
+				"uri": "widgets/PictureSlide/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": 30,
+					"bottom": null,
+					"top": 100,
+					"width": 750,
+					"height": 500
+				}
+			}]
+		}, {
+			"id": "78c4ef4b661f46e1a34c62764a8ea1fd",
+			"label": "基础工具",
+			"icon": "dgp-icon-search",
+			"containerId": "dbe718835536441d8a03c2aea1660aab",
+			"widgets": [{
+				"id": "427e2cc7707b47d1a393c000a1869181",
+				"name": "书签管理",
+				"icon": "dgp-icon-favorites",
+				"uri": "widgets/BookMarksManager/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": 30,
+					"bottom": null,
+					"top": 100,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "1c37e348399f4415afd8fe01b13cd5e2",
+				"name": "自定义数据导出",
+				"icon": "dgp-icon-history",
+				"uri": "widgets/CustomDataExport/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": 30,
+					"bottom": null,
+					"top": 100,
+					"width": 440,
+					"height": 480
+				}
+			}, {
+				"id": "ec63070b710d49928aa097acc8dda707",
+				"name": "历史数据查看",
+				"icon": "dgp-icon-history",
+				"uri": "widgets/HistoricalDataView/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": 30,
+					"bottom": null,
+					"top": 100,
+					"width": 360,
+					"height": 100
+				}
+			}, {
+				"id": "d6236b2764ac4cf79ccb9aff2cadf72b",
+				"name": "专题渲染",
+				"icon": "dgp-icon-Relief-map",
+				"uri": "widgets/TopicRender/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": null,
+					"bottom": null,
+					"top": null,
+					"width": null,
+					"height": null
+				}
+			}, {
+				"id": "1cf1f9891373437ca20ddc9d8ea5ac53",
+				"name": "数据加载",
+				"icon": "dgp-icon-statistic",
+				"uri": "widgets/LoadData/Widget",
+				"config": null,
+				"configContent": null,
+				"containerId": "dbe718835536441d8a03c2aea1660aab",
+				"position": {
+					"left": null,
+					"right": 30,
+					"bottom": null,
+					"top": 100,
+					"width": null,
+					"height": null
+				}
+			}]
+		}]
+	},
+	"map": {
+		"position": {
+			"left": 95,
+			"right": 0,
+			"bottom": 0,
+			"top": 60,
+			"width": null,
+			"height": null
+		},
+		"basemaps": [{
+			"guid": "998e6f7f5a40499799e6d3e75bd6797d",
+			"name": "区划",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/BJQH/MapServer",
+			"type": "tiled",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "29cf77167c564c649877025da8c8810e",
+			"name": "影像",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/2013YX/MapServer",
+			"type": "tiled",
+			"icon": null,
+			"visible": false,
+			"dynamicToken": false
+		}, {
+			"guid": "107e2bb8e729420cabe0ecd9a5f9ddfd",
+			"name": "注记",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/ZJ/MapServer",
+			"type": "tiled",
+			"icon": null,
+			"visible": false,
+			"dynamicToken": false
+		}],
+		"operationallayers": [{
+			"guid": "ec9529723d5e43468875852f69b51c73",
+			"name": "行政区划",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/XZQH/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "e85c9b680c9f495c9d8e271e7a67b74d",
+			"name": "总体规划",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/ZTGH/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "6a038a245be74d1c8eb4a11e86a2ba29",
+			"name": "控制规划",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/KZGH/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "66f91171aec148578addf23cbeaab0bd",
+			"name": "专项规划",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/ZXGH/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "179547b42b2e4f6ab14a4c340d0c94c9",
+			"name": "规划审批",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/SP/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "ce44adbf1f7a4fcbabfdefe8b7d9d62f",
+			"name": "项目状态",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/XMZTD/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "ce785191cb3743fc8bd260e82ab15dea",
+			"name": "建设方案范围",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/JSFAFW/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}, {
+			"guid": "421fb30a88974b6fb53574d9346c8871",
+			"name": "领导监控",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/JZJK/MapServer",
+			"type": "dynamic",
+			"icon": null,
+			"visible": true,
+			"dynamicToken": false
+		}],
+		"geometryService": {
+			"guid": "074715d939974297843e2e2f26199555",
+			"name": "几何服务",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+			"type": "geometry",
+			"icon": null,
+			"visible": false,
+			"dynamicToken": false
+		},
+		"mapOptions": {
+			"extent": {
+				"xmin": 6484650.0,
+				"ymin": 6583145.0,
+				"xmax": 6499493.0,
+				"ymax": 6598914.0
+			},
+			"slider": false
+		},
+		"3D": false,
+		"2D": true
+	}
 }

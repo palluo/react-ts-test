@@ -1,25 +1,14 @@
-import { CREATE_MAP, ADD_WIDGET } from 'actions/main'
+import { CREATE_MAP, ADD_WIDGET_CONTAINER } from 'actions/main'
 
-export class IProps {
-  mapCtrl: {}
-  createMap: (domNode: object) => void
-  initApp: () => void
-  widget: any
-}
-
-// const initState = {
-//   mapCtrl: {},
-//   createMap: (domNode: object) => {},
-//   initApp: () => {},
-//   widget: {}
-
-// }
 const main = (state = {} , action) => {
   switch (action.type) {
     case CREATE_MAP:
       return { ...state, mapCtrl: action.mapCtrl }
-    case ADD_WIDGET:
-      return { ...state, widget: action.widget }
+    case ADD_WIDGET_CONTAINER:
+    // const allWidgetContainers =   AppGlobals.loadWidgetContainers
+    // let newState = { ...state, widgetContainers: allWidgetContainers }
+    let newState = { ...state, lastWidgetContainer: action.widget }
+    return newState
     default:
       return state
   }

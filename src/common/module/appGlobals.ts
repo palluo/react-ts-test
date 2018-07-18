@@ -8,5 +8,7 @@ export class AppGlobals {
         systemName: string
         mapWkid: string
     }
-    static appPrivilege: Object
+    static appPrivilege: Object = {}
+    static loadWidgetContainers: any[] = []
+    static loadWidgetTools: any[] = []
 }

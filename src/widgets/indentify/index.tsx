@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { AppGlobals } from 'common/module/appGlobals'
 import './style/index.less'
-// import { render } from 'react-dom'
+
 class IProps {
-    sysName: string = ''
+     sysName: string = ''
 }
 class Header extends Component<IProps> {
-    static defaultProps = {
+    public static defaultProps = {
         sysName: AppGlobals.appInfo.systemName
     }
     constructor(props) {
@@ -14,16 +14,14 @@ class Header extends Component<IProps> {
         this.state = {
         }
     }
-    render() {
+    public render() {
         return (
-            <div className="dgp-hrader-container">
-                <div className="sysName" >{
-                    this.props.sysName}
-                </div>
+            <div className="container">
+                <div className="sysName" >{this.props.sysName}</div>
             </div>
         )
     }
 
 }
-// render(<Header sysName="系统" />, document.getElementById('container'))
+
 export default Header

@@ -3,7 +3,7 @@ import EsriMap from 'esri/Map'
 
 export const CREATE_MAP = 'CREATE_MAP'
 export const INIT_APP = 'INIT_APP'
-export const ADD_WIDGET = 'ADD_WIDGET'
+export const ADD_WIDGET_CONTAINER = 'ADD_WIDGET_CONTAINER'
 
 export const createMap = (domNode) => {
   return {
@@ -20,8 +20,9 @@ export const initApp = () => {
   }
 }
 
-export const addWidget = () => {
+export const addWidgetContainer = (widget: Object) => {
   return {
-    type: ADD_WIDGET
+    type: ADD_WIDGET_CONTAINER,
+    widget: widget
   }
 }

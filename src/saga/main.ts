@@ -4,7 +4,7 @@ import { getService } from 'common/utils/serviceUtil'
 import { RequestParam } from 'common/module/requestParam'
 import { AppGlobals } from 'common/module/appGlobals'
 import lodash from 'lodash'
-import { ADD_WIDGET } from 'actions/main'
+import { addWidgetContainer } from 'actions/main'
 import { createLoadableComp } from 'common/utils/containerUtil'
 
 function* init() {
@@ -15,7 +15,7 @@ function* init() {
     yield call(initConfig, privilege)
 }
 
-function* initConfig(config) {
+function* initConfig(config: any) {
     AppGlobals.appPrivilege = lodash.cloneDeep(config)
     yield call(initLayout, config.widgetOnScreen, config.widgetPool)
 }
@@ -28,8 +28,13 @@ function* initWidgte(widgetOnScreenLayout: any) {
     let widgets: any[] = widgetOnScreenLayout.widgets
     for (let i = 0, iLength = widgets.length; i < iLength; i++) {
         const widgetUrl = widgets[i].uri
-        let comWidget = createLoadableComp(widgetUrl)
-        yield put({ type: ADD_WIDGET, widget: comWidget })
+        let widgetCom = yield createLoadableComp(widgetUrl)
+        let widget = {
+            widgetCom: widgetCom,
+            privilegeConfig: widgets[i]
+        }
+        widget.widgetCom = widgetCom
+        yield put(addWidgetContainer(widget))
     }
 }
 

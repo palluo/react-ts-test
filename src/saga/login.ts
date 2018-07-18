@@ -3,7 +3,9 @@ import { getService } from 'common/utils/serviceUtil'
 import { call, fork, take } from 'redux-saga/effects'
 import { RequestParam } from 'common/module/requestParam'
 import { LOGIN } from 'actions/login'
+// import createHistory from 'history/createHashHistory'
 
+// const history = createHistory()
 function* login(userName, password, onSuccess) {
     const encryptionPassword = yield call(getLoginEncryption, password)
     const obj = {
@@ -12,8 +14,9 @@ function* login(userName, password, onSuccess) {
     }
     const userInfo = yield call(logincheck, obj)
     if (userInfo) {
-        yield call(onSuccess)
+         yield call(onSuccess)
         // yield put(loginSuccee(userInfo))
+        // history.pushState('/main')
     } else {
         alert('用户名或密码错误！')
     }
