@@ -1,54 +1,60 @@
 import React, { Component } from 'react'
-// import { AppGlobals } from 'common/module/appGlobals'
+import { Widget, Position, WidgetContainerPosition, Thems, AppThems, WidgetThems, SetWidgetThems }
+from 'common/module/privilegeParam'
+import { AppGlobals } from 'common/module/appGlobals'
+import { setDomPosition } from 'common/utils/domUtil'
+import { pxToRem } from 'common/utils/styleUtil'
 import './style/index.less'
 
 class IProps {
-    widget: any
-    privilegeConfig: any
+    widgetCom: any
+    privilegeConfig: Widget
     parentDom: any
 }
-class IState {
-    style: {
-        position: any
-        left: string | number
-        right: string | number
-        bottom: string | number
-        top: string | number
-    }
+interface IState {
+    widgetContainerPosition: WidgetContainerPosition,
+    thems: Thems,
+    widgetThems: WidgetThems
+
 }
-/**
- * 设置dom的样式
- * @param domStyle dom的style对象
- * @param newStyle 要设置的dom样式
- */
-const setWidgetPosition = (domStyle: any, newStyle: any) => {
-    domStyle.position = newStyle.position
-    domStyle.left = newStyle.left ? newStyle.left + 'px' : null
-    domStyle.right = newStyle.right ? newStyle.right + 'px' : null
-    domStyle.bottom = newStyle.bottom ? newStyle.bottom + 'px' : null
-    domStyle.top = newStyle.top ? newStyle.top + 'px' : null
-}
+
 class ContainerWindow extends Component<IProps, IState> {
     public static defaultProps = {
     }
     constructor(props) {
         super(props)
-        const position = this.props.privilegeConfig.position
+        const position: Position = this.props.privilegeConfig.position
+        const thems: Thems = this.props.privilegeConfig.thems
         this.state = {
-            style: {
+            widgetContainerPosition: {
+                ...position,
                 position: 'absolute',
-                left: position.left,
-                right: position.right,
-                bottom: position.bottom,
-                top: position.top
+            },
+            thems: thems,
+            widgetThems : {
+                backgroundColor: thems.backgroundColor,
+                color: thems.color,
+                width: position.width,
+                height: position.height,
+                fontFamily: thems.fontFamily
             }
         }
     }
     public render() {
-        setWidgetPosition (this.props.parentDom.style, this.state.style)
+        setDomPosition(this.props.parentDom.style, this.state.widgetContainerPosition)
+        const setWidgetThems: SetWidgetThems = new SetWidgetThems ()
+        const appThems: AppThems = AppGlobals.appPrivilege.appBase.appThems
+        setWidgetThems.width = pxToRem(this.state.widgetContainerPosition.width)
+        setWidgetThems.height = pxToRem(this.state.widgetContainerPosition.height)
+        setWidgetThems.backgroundColor = this.state.thems.backgroundColor ? this.state.thems.backgroundColor
+        : appThems.themsColor
+        setWidgetThems.color = this.state.thems.color ? this.state.thems.color
+        : appThems.color
+        setWidgetThems.fontFamily = this.state.thems.fontFamily ? this.state.thems.fontFamily
+        : appThems.fontFamily
         return (
             <div className="dgp-containerWindow-container">
-                <this.props.widget />
+                <this.props.widgetCom configStyle={setWidgetThems} />
             </div>
         )
     }

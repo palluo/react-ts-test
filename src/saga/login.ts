@@ -7,6 +7,8 @@ import { LOGIN } from 'actions/login'
 
 // const history = createHistory()
 function* login(userName, password, onSuccess) {
+    yield call(onSuccess)
+    return
     const encryptionPassword = yield call(getLoginEncryption, password)
     const obj = {
         loginName: userName,

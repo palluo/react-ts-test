@@ -2,7 +2,7 @@ import Loadable from 'react-loadable'
 import Loading from 'widgets/loading'
 import { AppGlobals } from 'common/module/appGlobals'
 
-const createLoadableComp = url => Loadable({
+export const createLoadableComp = url => Loadable({
   loader: () => import(`widgets/${url}`),
   loading: Loading
 })
@@ -13,7 +13,7 @@ const createLoadableComp = url => Loadable({
 //   })
 // }
 
-const getWidgetContainerByid = (id: string) => {
+export const getWidgetContainerByid = (id: string) => {
   let widget: any = null
   AppGlobals.loadWidgetContainers.forEach(function (v, k) {
     if (v.props.privilegeConfig.id === id) {
@@ -23,7 +23,7 @@ const getWidgetContainerByid = (id: string) => {
   return widget
 }
 
-const getWidgetToolByid = (id: string) => {
+export const getWidgetToolByid = (id: string) => {
   let widget: any = null
   AppGlobals.loadWidgetTools.forEach(function (v, k) {
     if (v.props.privilegeConfig.id === id) {
@@ -32,5 +32,3 @@ const getWidgetToolByid = (id: string) => {
   })
   return widget
 }
-
-export { createLoadableComp, getWidgetContainerByid, getWidgetToolByid };

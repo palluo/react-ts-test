@@ -1,4 +1,4 @@
-
+import { Privilege } from 'common/module/privilegeParam'
 export class AppGlobals {
     static appInfo: {
         serverUrl: string
@@ -8,7 +8,9 @@ export class AppGlobals {
         systemName: string
         mapWkid: string
     }
-    static appPrivilege: Object = {}
+    static isNewPrivilege: boolean = false
+    static baseFintSize: number = 15
+    static appPrivilege: Privilege
     static loadWidgetContainers: any[] = []
     static loadWidgetTools: any[] = []
 }

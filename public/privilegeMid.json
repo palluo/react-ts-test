@@ -1,0 +1,216 @@
+{
+	"widgetOnScreen": {
+		"widgets": [
+			{
+				"id": "2b3ba41e35854b99b1ab9bee0ffa7409",
+				"name": "Head",
+				"uri": "header",
+				"version": null,
+				"thems": {
+					"backgroundColor": "#d66262",
+					"color": "#ffffff",
+					"fontFamily": "微软雅黑"
+				},
+				"position": {
+					"left": 0,
+					"right": 0,
+					"bottom": null,
+					"top": 0,
+					"width": null,
+					"height": 4
+				}
+			},
+			{
+				"id": "07e484e2a4854247ae4150e7f4db134e",
+				"name": "通用工具栏",
+				"uri": "commonToolBar",
+				"version": null,
+				"thems": {
+					"backgroundColor": null,
+					"color": "#000000",
+					"fontFamily": null
+				},
+				"position": {
+					"left": null,
+					"right": 1,
+					"bottom": null,
+					"top": 5,
+					"width": 20,
+					"height": 3
+				}
+			}
+		]
+	},
+	"widgetPool": {
+		"widgets": [
+			{
+				"id": "5c787a0fc71f49a9877ea6b0d37e4af9",
+				"name": "属性查询",
+				"icon": "dgp-icon-indentify1",
+				"uri": "indentify",
+				"config": null,
+				"configContent": null,
+				"containerId": "07e484e2a4854247ae4150e7f4db134e",
+				"thems": {
+					"backgroundColor": null,
+					"color": "#000000",
+					"fontFamily": null
+				},
+				"position": {
+					"left": null,
+					"right": 2,
+					"bottom": null,
+					"top": 6,
+					"width": null,
+					"height": 40
+				}
+			}
+		],
+		"groups": []
+	},
+	"map": {
+		"position": {
+			"left": 6,
+			"right": 0,
+			"bottom": 0,
+			"top": 4,
+			"width": null,
+			"height": null
+		},
+		"basemaps": [
+			{
+				"guid": "998e6f7f5a40499799e6d3e75bd6797d",
+				"name": "区划",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/BJQH/MapServer",
+				"type": "tiled",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "29cf77167c564c649877025da8c8810e",
+				"name": "影像",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/2013YX/MapServer",
+				"type": "tiled",
+				"icon": null,
+				"visible": false,
+				"dynamicToken": false
+			},
+			{
+				"guid": "107e2bb8e729420cabe0ecd9a5f9ddfd",
+				"name": "注记",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/ZJ/MapServer",
+				"type": "tiled",
+				"icon": null,
+				"visible": false,
+				"dynamicToken": false
+			}
+		],
+		"operationallayers": [
+			{
+				"guid": "ec9529723d5e43468875852f69b51c73",
+				"name": "行政区划",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/XZQH/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "e85c9b680c9f495c9d8e271e7a67b74d",
+				"name": "总体规划",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/ZTGH/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "6a038a245be74d1c8eb4a11e86a2ba29",
+				"name": "控制规划",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/KZGH/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "66f91171aec148578addf23cbeaab0bd",
+				"name": "专项规划",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/ZXGH/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "179547b42b2e4f6ab14a4c340d0c94c9",
+				"name": "规划审批",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/SP/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "ce44adbf1f7a4fcbabfdefe8b7d9d62f",
+				"name": "项目状态",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/XMZTD/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "ce785191cb3743fc8bd260e82ab15dea",
+				"name": "建设方案范围",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/JSFAFW/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			},
+			{
+				"guid": "421fb30a88974b6fb53574d9346c8871",
+				"name": "领导监控",
+				"url": "http://192.168.1.53:6080/arcgis/rest/services/SJYZT/JZJK/MapServer",
+				"type": "dynamic",
+				"icon": null,
+				"visible": true,
+				"dynamicToken": false
+			}
+		],
+		"geometryService": {
+			"guid": "074715d939974297843e2e2f26199555",
+			"name": "几何服务",
+			"url": "http://192.168.1.53:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+			"type": "geometry",
+			"icon": null,
+			"visible": false,
+			"dynamicToken": false
+		},
+		"mapOptions": {
+			"extent": {
+				"xmin": 6484650.0,
+				"ymin": 6583145.0,
+				"xmax": 6499493.0,
+				"ymax": 6598914.0
+			},
+			"slider": false
+		},
+		"3D": false,
+		"2D": true
+	},
+	"appBase": {
+		"appThems": {
+			"backgroundColor": "#ffffff",
+			"color": "#000000",
+			"fontSize": 14,
+			"fontFamily": "微软雅黑",
+			"themsColor":"#cc0b0b"
+		},
+		"systemParameter":{
+			"systemName":"React+TypeScript+ArcGIS演示系统"
+		}
+	}
+}

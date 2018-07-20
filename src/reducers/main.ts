@@ -5,8 +5,6 @@ const main = (state = {} , action) => {
     case CREATE_MAP:
       return { ...state, mapCtrl: action.mapCtrl }
     case ADD_WIDGET_CONTAINER:
-    // const allWidgetContainers =   AppGlobals.loadWidgetContainers
-    // let newState = { ...state, widgetContainers: allWidgetContainers }
     let newState = { ...state, lastWidgetContainer: action.widget }
     return newState
     default:

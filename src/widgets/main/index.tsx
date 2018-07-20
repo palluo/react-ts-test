@@ -34,11 +34,12 @@ const renderWidget = (item: any, isTool: boolean, propsWidgets: any[]) => {
   let comWidget: any
   if (isTool) {
     container = document.getElementById('popup')
-    comWidget = <PopWindow widget={item.widgetCom} privilegeConfig={item.privilegeConfig}/>
+    comWidget = <PopWindow widgetCom={item.widgetCom} privilegeConfig={item.privilegeConfig} parentDom={newDom}/>
     AppGlobals.loadWidgetTools.push(comWidget)
   } else {
     container = document.getElementById('container')
-    comWidget = <ContainerWindow widget={item.widgetCom}  privilegeConfig={item.privilegeConfig} parentDom={newDom} />
+    comWidget = <ContainerWindow widgetCom={item.widgetCom}
+     privilegeConfig={item.privilegeConfig} parentDom={newDom} />
     AppGlobals.loadWidgetContainers.push(comWidget)
   }
   container.appendChild(newDom)

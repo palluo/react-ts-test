@@ -4,6 +4,7 @@ import './style/index.less'
 // import { render } from 'react-dom'
 class IProps {
     sysName: string = ''
+    configStyle: any
 }
 class Header extends Component<IProps> {
     static defaultProps = {
@@ -16,7 +17,7 @@ class Header extends Component<IProps> {
     }
     render() {
         return (
-            <div className="dgp-hrader-container">
+            <div className="dgp-header-container" style={this.props.configStyle}>
                 <div className="sysName" >{
                     this.props.sysName}
                 </div>
